@@ -15,7 +15,7 @@ manager
   event or condiction  
 
 # run levels, shutdown and reboot  
-* runlevels: ![run level of a linux system](imgs/run_level.png)  
+* runlevels: ![run level of a linux system](imgs/run_levels.png)  
 * to change runlevel permanately: edit /etc/inittab  
 * to re-change runlevel after boot: runlevel ; telinit N  
 * systemd and upstart: new alternatives to init  
