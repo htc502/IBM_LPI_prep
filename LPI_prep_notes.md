@@ -8,7 +8,7 @@ Standard(FSH) ![table1 FHS directories in /](imgs/fhs_directories_in_root.png)
   * pata: parallele ATA, another kind of ATA which has gradually been disappeared ![SATA and PATA physical interface](imgs/sata_pata.jpg)   
   * about hard disk  
     * the structure of a typical hard disk   
-      [hard disk structure](imgs/hd_schematic.png)  
+      ![hard disk structure](imgs/hd_schematic.png)  
     * disk geometry ![disk geometry example](imgs/geometry_disk.png "taken from tldp")  
 
 # boot the system  
