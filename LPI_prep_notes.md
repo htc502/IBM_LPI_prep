@@ -2,13 +2,13 @@
 * directories requited in / defined by Filesystem Hierachy
 Standard(FSH) ![table1 FHS directories in /](imgs/fhs_directories_in_root.png)  
 * scsi devices and ide devices  
-** scsi(pronouced scuzzy), is a interface standard used by computers to attching peripheral devices to computers, usually used on server or high-end machine which requires high availablility and durability, it is expensive.  
-** ide( also known as ATA), a disk drive implementation that integrates the controller on disk driver itself, used on low-end pcs, it's more cost effective compared with scsi  
-** sata: seriel ATA, the successor of ATA who comes with faster speed and low price  
-** pata: parallele ATA, another kind of ATA which has gradually been disappeared ![SATA and PATA physical interface](imgs/sata_pata.jpg)   
-** about hard disk  
-*** the structure of a typical hard disk ![hard disk structure](imgs/hd_schematic.png)  
-*** disk geometry ![disk geometry example](imgs/geometry_disk.png)  
+  * scsi(pronouced scuzzy), is a interface standard used by computers to attching peripheral devices to computers, usually used on server or high-end machine which requires high availablility and durability, it is expensive.  
+  * ide( also known as ATA), a disk drive implementation that integrates the controller on disk driver itself, used on low-end pcs, it's more cost effective compared with scsi  
+  * sata: seriel ATA, the successor of ATA who comes with faster speed and low price  
+  * pata: parallele ATA, another kind of ATA which has gradually been disappeared ![SATA and PATA physical interface](imgs/sata_pata.jpg)   
+  * about hard disk  
+    * the structure of a typical hard disk ![hard disk structure](imgs/hd_schematic.png)  
+    * disk geometry ![disk geometry example](imgs/geometry_disk.png)  
 
 # boot the system  
 * stage 1 boot loader: executable codes that resides in the fisrt
