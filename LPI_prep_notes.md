@@ -10,11 +10,23 @@ Standard(FSH) ![table1 FHS directories in /](imgs/fhs_directories_in_root.png)
     * the structure of a typical hard disk   
       ![hard disk structure](imgs/hd_schematic.png)  
     * disk geometry ![disk geometry example](imgs/geometry_disk.png "taken from tldp")  
+     >"Units = " line in the picture above shows the total bytes in a unit you have been set(with command 'u') in parted or fdisk software
+     >how to get the MBR?
+     >the MBR(master boot recorde, totally 512 byte which = 446 + 64 + 2) scheme:
+     	  * 446 byte - bootstrap code
+	  * 64 byte - partition table
+	  * 2 byte - signature
+      >to get the MBR:
+      	  >dd if=/dev/sda bs=512 count=1 >place_where_dumped_mbr_goes
+      >to get the paritaion table&signature(the end 66 byte of the mbr):
+      	  >dd if=/dev/sda bs=512 count=1 | tail -c 64 | hexdump -C
+	  ![the partation table of the mbr](imags/mbr_ptable.png)
+      >meaning of the partation table
+      ![partation table meaning](/imags/ptable_code_meaning.png)
 
 # boot the system  
 * stage 1 boot loader: executable codes that resides in the fisrt
-sector of the MBR(__master boot record__) of every disk(floppy, CD,
-DVD, usd disk etc)  
+sector of (the __MBR__) of every disk(floppy, CD, DVD, usd disk etc)  
 * chain loading: when a boot manager tries to load another boot
 manager   
 * the init process  
