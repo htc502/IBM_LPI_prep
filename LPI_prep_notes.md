@@ -1,6 +1,6 @@
 # hard disk layout 
 * directories requited in / defined by Filesystem Hierachy  
-Standard(FSH) ![table1 FHS directories in /](imgs/fhs_directories_in_root.png)  
+  ![table1 FHS directories in /](imgs/fhs_directories_in_root.png)  
 * scsi devices and ide devices  
   * scsi(pronouced scuzzy), is a interface standard used by computers to attching peripheral devices to computers, usually used on server or high-end machine which requires high availablility and durability, it is expensive.  
   * ide( also known as ATA), a disk drive implementation that integrates the controller on disk driver itself, used on low-end pcs, it's more cost effective compared with scsi  
@@ -26,7 +26,7 @@ Standard(FSH) ![table1 FHS directories in /](imgs/fhs_directories_in_root.png)
          useful: ![mbr extract and file](imgs/mbr_file.png)  
       * meaning of the partation table  
       ![partation table meaning](imgs/ptable_code_meaning.png)  
-    * about the booting code in MBR
+    * about the booting code in MBR  
 	well, I am unable to understand the MBR boot code dumped from my
 	virtualbox debian linux, but
 	[here](http://thestarman.narod.ru/asm/mbr/STDMBR.htm) is an
